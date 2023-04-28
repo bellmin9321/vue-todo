@@ -31,10 +31,12 @@ input:focus {
   outline: none;
 }
 .inputBox {
-  background: white;
   height: 50px;
   line-height: 50px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .inputBox input {
   border-style: none;
@@ -44,7 +46,6 @@ input:focus {
   float: right;
   background: linear-gradient(to right, #62eac6, #32cee6);
   display: block;
-  width: 3rem;
   border-radius: 0 5px 5px 0;
 }
 .addBtn {

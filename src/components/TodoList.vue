@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="todoItem in todoItems" v-bind:key="todoItem">
-        {{ todoItem }}
-        <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
-          <i class="fas fa-trash-alt"></i>
-        </span>
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li v-for="todoItem in todoItems" v-bind:key="todoItem">
+      {{ todoItem }}
+      <span class="removeBtn" v-on:click="removeTodo(todoItem, index)">
+        <i class="fas fa-trash-alt"></i>
+      </span>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -42,6 +40,7 @@ ul {
   padding-left: 0;
   margin-top: 0;
   text-align: left;
+  width: 500px;
 }
 li {
   display: flex;

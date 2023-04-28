@@ -36,6 +36,8 @@ body {
 body {
   text-align: center;
   background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
 }
 input {
   border-style: groove;
